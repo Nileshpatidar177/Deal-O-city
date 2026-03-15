@@ -54,7 +54,14 @@ const Contact = () => {
         Shyam Patidar GitHub
       </a>
     </p>
-    
+
+    <p>
+  Portfolio: 
+  <a 
+    href="https://shyampatidar-portfolio.vercel.app/"  target="_blank" rel="noopener noreferrer" className='text-blue-600 hover:underline'>
+    Shyam Patidar Portfolio
+  </a>
+</p>
 
 
     <p className='pt-2 text-base md:text-lg'>
