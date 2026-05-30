@@ -28,7 +28,7 @@ const Footer = () => {
                         GET IN TOUCH
                     </p>
                     <ul className='flex flex-col gap-1 text-gray-600'>
-                        <li>+91 8269101063</li>
+                        <li>+91 8959523165</li>
                         <li>contact@dealocity.com</li>
                     </ul>
 

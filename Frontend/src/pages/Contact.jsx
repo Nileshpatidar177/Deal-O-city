@@ -15,7 +15,7 @@ const Contact = () => {
   <div className='flex flex-col justify-center items-start gap-6'>
     <p className='font-semibold text-xl text-gray-600'>Our Store:</p>
     <p className='text-gray-500'>282-B Vijaynagar Behind C-21 Mall <br /> Indore, Madhya Pradesh, India 452010</p>
-    <p className='text-gray-500'>Tel: +91 8269101063 <br /> Email: contact@dealocity.com </p>
+    <p className='text-gray-500'>Tel: +91 8959523165 <br /> Email: contact@dealocity.com </p>
 
   </div>
 
@@ -28,39 +28,39 @@ const Contact = () => {
       </div>
 
    <div className='my-10 flex flex-col md:flex-row gap-16 items-center'>
-  <img src={assets.profile_img} alt="Developer" className='w-full md:max-w-[300px] rounded-t-full shadow-xl hover:shadow-green-700 hover:scale-110 transition ease-in-out' />
+  <img src={assets.mypng} alt="Developer" className='w-full md:max-w-[300px] rounded-t-full shadow-xl hover:shadow-green-700 hover:scale-110 transition ease-in-out' />
   
   <div className='flex flex-col gap-4 text-gray-700 md:w-2/3 text-[17px] md:text-lg leading-relaxed'>
-    <h2 className='text-2xl font-bold text-gray-800'>Shyam Patidar</h2>
+    <h2 className='text-2xl font-bold text-gray-800'>Nilesh Patidar</h2>
     
 <p>
   Email: 
   <a 
-    href="mailto:shyampatidar672@gmail.com" 
+    href="mailto:patidarnilesh163@gmail.com" 
     className="text-blue-600 hover:underline"
   >
-    shyampatidar672@gmail.com
+    patidarnilesh163@gmail.com
   </a>
 </p>
 
     <p>
-      LinkedIn: <a href="https://www.linkedin.com/in/shyam-patidar-736b77257/" target="_blank" rel="noopener noreferrer" className='text-blue-600 hover:underline'>
-        Shyam Patidar LinkedIn
+      LinkedIn: <a href="https://www.linkedin.com/in/nilesh-patidar-493bb72b9/" target="_blank" rel="noopener noreferrer" className='text-blue-600 hover:underline'>
+        Nilesh Patidar LinkedIn
       </a>
     </p>
     
     <p>
-      GitHub: <a href="https://github.com/ShyamPatidar-17" target="_blank" rel="noopener noreferrer" className='text-blue-600 hover:underline'>
-        Shyam Patidar GitHub
+      GitHub: <a href="https://github.com/Nileshpatidar177" target="_blank" rel="noopener noreferrer" className='text-blue-600 hover:underline'>
+        Nilesh Patidar GitHub
       </a>
     </p>
 
     <p>
-  Portfolio: 
+  {/* Portfolio: 
   <a 
-    href="https://shyampatidar-portfolio.vercel.app/"  target="_blank" rel="noopener noreferrer" className='text-blue-600 hover:underline'>
-    Shyam Patidar Portfolio
-  </a>
+    href=""  target="_blank" rel="noopener noreferrer" className='text-blue-600 hover:underline'>
+    Nilesh Patidar Portfolio
+  </a> */}
 </p>
 
 
