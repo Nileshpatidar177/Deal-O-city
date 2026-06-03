@@ -58,6 +58,8 @@ app.use('/api/cart', cartRouter);
 app.use('/api/order', orderRouter);
 
 /* ---------------- START SERVER ---------------- */
-app.listen(port, () => {
-  console.log(`✅ Backend running on http://localhost:${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`✅ Backend running on http://localhost:${port}`);
+// });
+
+export default app;

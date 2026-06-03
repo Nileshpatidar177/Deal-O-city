@@ -1,11 +1,12 @@
 // import { currency } from "../../Admin/src/App.jsx"
 import orderModel from "../models/orderModel.js"
 import userModel from "../models/userModel.js"
-import { Stripe } from 'stripe'
+import  Stripe  from 'stripe'
 
 const currency = 'inr'
 const deliveryCharges = 10;
-
+console.log("Stripe Key Exists:", !!process.env.STRIPE_SECRET_KEY)
+console.log("Stripe Key Value:", process.env.STRIPE_SECRET_KEY?.slice(0,10))
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 
 //Cod
