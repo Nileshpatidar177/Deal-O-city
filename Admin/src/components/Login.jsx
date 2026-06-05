@@ -13,7 +13,7 @@ const onSUbmitHandler=async(e)=>{
     try {
          e.preventDefault();
         setLoading(true)
-        const response = await axios.post('https://deal-o-city-iy2v.vercel.app/api/user/admin',{email,password})
+        const response = await axios.post(backendUrl+'/api/user/admin',{email,password})
         setLoading(false)
         if(response.data.success)
         {
