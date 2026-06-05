@@ -1,4 +1,5 @@
 import mongoose, { mongo } from "mongoose";
+import 'dotenv/config';
 
 const connectDB= async()=>{
 
@@ -6,7 +7,7 @@ const connectDB= async()=>{
         console.log("DB CONNECTED");
         
     })
-    await mongoose.connect(`${process.env.MONGODB_URI}/Deal-O-City`)
+    await mongoose.connect(`${process.env.MONGODB_URI}/dealocity`)
 }
 
 

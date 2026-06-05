@@ -17,32 +17,27 @@ const port = process.env.PORT || 4000;
 connectDB();
 connectCloudinary();
 
-/* ---------------- CORS SETUP ---------------- */
 const allowedOrigins = [
-  'https://deal-o-city-admin.vercel.app',
-  'https://deal-o-city-cp8e.vercel.app',
   'http://localhost:5173',
-  'http://localhost:5174'
+  'http://localhost:5174',
+  'https://deal-o-city-cp8e.vercel.app',
+  'https://deal-o-city-admin.vercel.app'
 ];
 
 app.use(cors({
   origin: function (origin, callback) {
-   
     if (!origin) return callback(null, true);
 
     if (allowedOrigins.includes(origin)) {
       return callback(null, true);
     }
-    return callback(null, true);
+
+    return callback(new Error('Not allowed by CORS'));
   },
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+  allowedHeaders: ['Content-Type', 'Authorization', 'token']
 }));
-
-// IMPORTANT: handle preflight requests
-app.use(cors());
-app.options(/.*/, cors());
 
 /* ---------------- MIDDLEWARE ---------------- */
 app.use(express.json());
@@ -58,8 +53,8 @@ app.use('/api/cart', cartRouter);
 app.use('/api/order', orderRouter);
 
 /* ---------------- START SERVER ---------------- */
-// app.listen(port, () => {
-//   console.log(`✅ Backend running on http://localhost:${port}`);
-// });
+app.listen(port, () => {
+  console.log(`✅ Backend running on http://localhost:${port}`);
+});
 
 export default app;

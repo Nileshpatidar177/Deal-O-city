@@ -2,7 +2,7 @@ import userModel from "../models/userModel.js";
 import validator from 'validator'
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
-
+import { configDotenv } from "dotenv";
 const createToken = (id) => {
     return jwt.sign({ id }, process.env.JWT_SECRET)
 }
